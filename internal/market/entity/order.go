@@ -1,14 +1,14 @@
 package entity
 
 type Order struct {	// ordem
-	ID						string,
-	Investor			*Investor,
-	Asset					*Asset,
-	Shares				int,
-	PendingShares	int,
-	Price					float64,
-	OrderType			string,
-	Status				string,
+	ID						string
+	Investor			*Investor
+	Asset					*Asset
+	Shares				int
+	PendingShares	int
+	Price					float64
+	OrderType			string
+	Status				string
 	Transactions  []*Transaction
 }
 
@@ -22,6 +22,6 @@ func NewOrder(orderID string, investor *Investor, asset *Asset, shares int, pric
 		Price:					price,
 		OrderType: 			orderType,
 		Status:					"OPEN",
-		Transactions:		[]*Transaction{}
+		Transactions:		[]*Transaction{},
 	}
 }
