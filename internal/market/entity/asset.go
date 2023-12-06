@@ -10,6 +10,6 @@ func NewAsset(id string, name string, marketVolume int) *Asset { // cria um novo
 	return &Asset {
 		ID:						id,
 		Name: 				name,
-		MarketVolume: marketVolume	
+		MarketVolume: marketVolume,
 	}
 }
